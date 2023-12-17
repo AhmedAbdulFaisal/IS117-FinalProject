@@ -1,0 +1,138 @@
+<!-- DEVELOPER: Ahmed A Faisal, IS117-102, Spring 2022 (NJIT) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmed's Page (IS117)</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                justify-content-start
+                bg-dark navbar-dark
+                col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">C:\></a>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programming
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="tutorial1.html">C++ Tutorial</a>
+                                <a class="dropdown-item" href="#">C Tutorial</a>
+                            </div>
+                        </li>
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="computing.html">Computing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Technical Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="mt-4 p-5 bg-success text-white rounded">
+            <h1>Computer Stuff</h1>
+            <p>Restoration and General computer stuff </p>
+
+        </div>
+    </div>
+    <br> <br><br>
+    <div class="row">
+        <div class="row px-md-5">
+            <div class="p-3 border bg-light">
+                <h4><i>Gateway Computer Restoration </i></h4>
+                <hr class="solid">
+                <article>
+                    <p>     This Log is dedicated to restoring a Gateway 2000 computer I recieved a while back. Specifically,
+                        it is a Gateway 2000 486/33C, one of their older desktop towers from the early 1990s. As such, it
+                        is a medium-range system with a 33mhz 486 and 8MB of Ram, with an additional expansion for more 
+                        memory (But sadly no VLB slos). As such, the computer is moreso based off of the early 386 boards
+                        rather than the more advanced 486 boards, sporting no peripheral controllers, with 8 16-bit ISA slots
+                        allowing for hardware expansions. The computer came with a decent ISA Graphics Card and a controller
+                        card, however my version also has a modem card installed. I will be using an old ATI Graphics Mach8
+                        and an acer controller card for this machine. 
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="images/bios.jpg" alt="Gateway2000bios" style="width:80%;height:80%;">
+                    <br><br>
+                    <img src="images/mobo.jpg" alt="Gateway2000mobo" align="right" style="width:30%;height:30%;">
+                    <br><br>
+                    <p>     Sadly, the Motherboard itself has a barrel battery, and as such has leaked near the keyboard encoder
+                        and some resistors. After cutting the battery of the board, I decided to power the system on - and surprisingly,
+                        it worked. Despite a keyboard failiure, the computer booted into the bios just fine, although I can't 
+                        say that the BIOS is particularly useful. As mentioned earlier, some of the corrosion went onto the
+                        keyboard encoder but this can be fixed with some cleaning.
+                    </p>
+                    <br>
+                    <p>     My next step would be to clean the board up, remove the corrosion near the barrel battery, and then find
+                        an alternative to the battery. Much like any modern motherboard, the battery exists to hold BIOS 
+                        information when the computer is turned off. Motherboards having CR2023 batteries was only common with
+                        computers made in the late 90s, and many alternatives included strange microcontrollers like the Dallas RTC
+                        among others. A good substitute would be a CR2023 holder, but this would need to be soldered onto the board
+                        with an additional diode to prevent the board from recharging the battery - some of these boards recharged
+                        the barrel batteries when turned on so they could survive the next powerdown. 
+                    </p>
+                    <br>
+                    <p>     Besides this, my futue plans are to get the controller card working, and install MS-DOS 6.22 on an IDE-based
+                        CF-Card. I wanted to use this computer for more general purpose MS-DOS games, so I have decided on also installing
+                        a soundblaster 2 pro clone (The ESS 1688). Of course, an ATI Mach8 paired with a 486 DX33 is not enough for a 
+                        playable experience with DOOM, so I will probably not bother with any later DOS games like Quake or Descent. My
+                        final plan would be to find a compatible memory expansion and hopefully use it to install more than 8MB, and possibly
+                        install Windows 3.1. For floppy drives, I will be using a floppy USB-Emulator despite having a working floppy drive, as
+                        I do not have many floppies lying around. I will also be installing a CD-ROM drive. Ultimately, this will probably shape
+                        up to be the peak 486 computer of 1992. 
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Ahmed Faisal, 2022 | Terms Of Use | Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
